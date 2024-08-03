@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#007BFF"  # A calming blue
+backgroundColor = "#F5F5F5"  # Soft gray for a clean background
+secondaryBackgroundColor = "#E0E0E0"  # Lighter gray for subtle contrast
+textColor = "#333333"  # Dark gray for readability
+font = "sans serif"
