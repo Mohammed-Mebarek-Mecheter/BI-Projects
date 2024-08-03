@@ -2,7 +2,6 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-import numpy as np
 from src.app.utils import display_aggrid
 
 def plot_insurance_coverage_trend(data):
