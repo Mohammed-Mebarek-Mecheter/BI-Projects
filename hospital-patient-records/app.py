@@ -70,7 +70,7 @@ with col3:
 st.markdown(
     """
     <div style='text-align: center;'>
-        <p>Data source: <a href="https://mavenanalytics.io/">Maven Analytics</a> | Last updated: August 02, 2024</p>
+        <p>Data source: <a href="https://mavenanalytics.io/">Maven Analytics</a> | Last updated: August 03, 2024</p>
     </div>
     """, unsafe_allow_html=True
 )

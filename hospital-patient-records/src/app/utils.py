@@ -2,7 +2,7 @@ import pandas as pd
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 def load_data():
-    data = pd.read_csv('data/processed/records.csv')
+    data = pd.read_csv('data/records.csv')
     data['START'] = pd.to_datetime(data['START'])
     data['STOP'] = pd.to_datetime(data['STOP'])
     data['BIRTHDATE'] = pd.to_datetime(data['BIRTHDATE'])  # Ensure BIRTHDATE is in datetime format
