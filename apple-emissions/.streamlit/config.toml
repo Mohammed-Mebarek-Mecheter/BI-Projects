@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#34C759"  # Apple's green color, representing environmental focus
+backgroundColor = "#F5F5F7"  # Light gray background, similar to Apple's website
+secondaryBackgroundColor = "#FFFFFF"  # White for content areas, typical in Apple's design
+textColor = "#1D1D1F"  # Dark gray, close to black, for optimal readability
+font = "SF Pro Display, sans serif"  # Apple's preferred font, fallback to sans-serif

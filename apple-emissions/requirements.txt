@@ -1,0 +1,10 @@
+streamlit
+pandas
+seaborn
+matplotlib
+altair
+plotly
+bokeh
+vega
+streamlit-extras
+streamlit-plotly-events
