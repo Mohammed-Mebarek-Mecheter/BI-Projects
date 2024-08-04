@@ -18,7 +18,7 @@ def plot_length_of_stay_box(data):
     st.plotly_chart(fig, use_container_width=True)
 
 def plot_length_of_stay_heatmap(data):
-    data['AGE_GROUP'] = pd.cut(data['AGE'], bins=[0, 18, 35, 50, 65, 100], labels=['0-18', '19-35', '36-50', '51-65', '66+'])
+    data.loc[:, 'AGE_GROUP'] = pd.cut(data['AGE'], bins=[0, 18, 35, 50, 65, 100], labels=['0-18', '19-35', '36-50', '51-65', '66+'])
     pivot_table = data.pivot_table(index='AGE_GROUP', columns='GENDER', values='DURATION', aggfunc='mean').reset_index()
 
     fig = px.imshow(pivot_table.set_index('AGE_GROUP'),

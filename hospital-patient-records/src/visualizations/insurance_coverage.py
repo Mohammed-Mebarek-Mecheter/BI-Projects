@@ -27,7 +27,7 @@ def plot_insurance_coverage_trend(data):
     st.plotly_chart(fig, use_container_width=True)
 
 def plot_insurance_coverage_stacked_bar(data):
-    data['AGE_GROUP'] = pd.cut(data['AGE'], bins=[0, 18, 35, 50, 65, 100], labels=['0-18', '19-35', '36-50', '51-65', '66+'])
+    data.loc[:, 'AGE_GROUP'] = pd.cut(data['AGE'], bins=[0, 18, 35, 50, 65, 100], labels=['0-18', '19-35', '36-50', '51-65', '66+'])
     coverage_by_age_gender = data.groupby(['AGE_GROUP', 'GENDER'])['COVERED_BY_INSURANCE'].mean().reset_index()
     coverage_by_age_gender['COVERED_BY_INSURANCE'] *= 100
 
@@ -52,7 +52,6 @@ def plot_insurance_coverage_bubble_chart(data):
                      title='Percentage of Procedures Covered by Insurance and Their Respective Costs (Bubble Chart)',
                      labels={'COVERED_BY_INSURANCE': 'Percentage Covered by Insurance (%)', 'TOTAL_CLAIM_COST': 'Total Claim Cost ($)'})
     st.plotly_chart(fig, use_container_width=True)
-
 
 def display_insurance_coverage(data):
     try:
