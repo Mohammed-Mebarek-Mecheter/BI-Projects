@@ -6,5 +6,6 @@ altair
 plotly
 bokeh
 vega
+apple-emissions
 streamlit-extras
 streamlit-plotly-events
